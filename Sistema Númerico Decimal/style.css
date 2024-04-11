@@ -1,0 +1,278 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0px;
+    background-color: #41c9e2;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+a.equipe{
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    left: 300px;
+    color: #000;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color:#008dda;
+    height: 100px;
+    display: flex;
+
+}
+
+.logo{
+    padding-left: 25%;
+    padding-top: 7px;
+}
+.titulo{
+    margin: 10px;
+    width: 150px;
+}
+
+.btn-abrir{
+    margin: 10px;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+
+}
+/*div intro*/
+div#intro{
+    background-color: #41c9e2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 300px;
+}
+div#intro h1{
+    position: relative;
+    top: 150px;
+
+}
+div#intro p{
+    position: relative;
+    top: 150px;
+}
+
+
+/*fim div intro*/
+
+/*div historia*/
+#separador1 img{
+    height: 150px;
+    
+}
+#separador1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#separador1 h2{
+    position: relative;
+    left: 35px;
+    top: 15px;
+}
+#separador1 p{
+    position: relative;
+    right: 65px; 
+}
+/*fim div história*/
+div.flex h2{
+    display: flex;
+    margin: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+div.flex p{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+/*div funcionamento*/
+#separador2 img{
+    position: relative;
+    left: 200px;
+}
+#separador2 h2{
+    justify-content: center;
+}
+#separador2 p{
+    margin: 10px;
+}
+/*fim div funcionamento*/
+
+/*div operaçoes*/
+#separador3{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    
+    
+}
+#separador3 img{
+    height: 190px;
+    width: 285px;
+    align-items: center;
+}
+#separador3 h2{
+   margin: 0px 40px;
+}
+
+/*fim de div operaçoes*/
+
+/*div flex(conjunto de divs na pagina)*/
+div.flex img{
+    border-radius: 25px;
+}
+div.flex{
+    justify-content: center;
+    background-color: #ace2e1;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    
+}
+/*fim de div flex(conjunto de divs na pagina)*/
+/*div separador 4*/
+#separador4{
+    display: flex;
+    align-items: center;
+}
+#separador4 img{
+    height: 200px;
+    margin: 3px;
+}
+#separador4 h2{
+    position: relative;
+    bottom: 60px;
+    left: 14px;
+}
+#separador4 p{
+    position: relative;
+    right: 157px;
+}
+/*fim div separador 4*/
+
+/*div separador 5*/
+#separador5{
+    display: flex;
+    align-items: center;
+}
+#separador5 img{
+    height: 200px;
+    margin: 3px;
+}
+#separador5 h2{
+    position: relative;
+    bottom: 60px;
+    left: 14px;
+}
+#separador5 p{
+    position: relative;
+    right: 137px;
+    top: 10px;
+}
+/*fim do div separador 5*/
+
+/*section curiosidades*/
+section.final-pag{
+    display: flex;
+}
+div.imagem-curiosidade img{
+    height: 130px;
+}
+.curiosidades{
+    margin: 25px;
+    display: block;
+
+
+}
+/*fim da section curiosidades*/
+
+/*formulario*/
+.mb-3{
+    padding: 10px;
+    display: inline-block;
+}
+textarea{
+    position: relative;
+    top:70px;
+    right: 100px;
+}
+.form-label{
+    position: relative;
+    left: 165px;
+    top: 30px;
+}
+input{
+    position: relative;
+    left: 176px;
+    top: 30px;
+}
+.form-label2{
+    position: relative;
+    right: 110px;
+    top: 17px;
+}
+/*fim de formulario*/
+
+/*Botões contao*/
+.contato{
+    position: relative;
+    top: 200px;
+    right: 250px;
+}
+i{
+    
+    position: relative;
+    top: 35px;
+    right: 40px;
+}
+/*fim Botão contao*/
+nav {
+    height: 100%;
+    width: 0px;
+    background-color:rgb(119, 179, 205);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+    text-wrap: nowrap;
+    
+}
+
+nav a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+
+}
+
+nav a:hover {
+  color: rgb(112, 212, 255);
+  background-color: rgb(30, 61, 83);
+}
+
+main{
+    padding: 10px;
+}
+
+footer{
+    height: 300px;
+    background-color: #f7eedd;
+    display: flex;
+    justify-content: center;
+}
