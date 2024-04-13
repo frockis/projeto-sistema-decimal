@@ -10,7 +10,7 @@ body{
 
 html{
     scroll-behavior: smooth;
-    transition: 30s;
+    
 }
 a{
     text-decoration: none;
@@ -20,7 +20,7 @@ a.equipe{
     text-decoration: none;
     font-size: 25px;
     position: relative;
-    left: 520px;
+    left: 1150px;
     color: #fff;
     width: auto;
     display: flex;
@@ -35,17 +35,22 @@ header{
 }
 
 .logo{
+    height: 120px;
     padding-left: 27%;
     padding-top: 7px;
     position: relative;
-    left: 90px;
+    left: 500px;
+    bottom: 15px;
 }
 .titulo{
     margin: 10px;
     width: 150px;
     font-size: 20px;
     position: relative;
-    left: 90px;
+    left: 700px;
+    bottom: 125px;
+    text-decoration: none;
+    color: #000;
 }
 
 .btn-abrir{
@@ -260,6 +265,55 @@ i{
     right: 60px;
 }
 /*fim Botão contao*/
+
+/*Equipe*/
+
+      .membro {
+        width: 100%; /* Utiliza toda a largura disponível */
+        box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento */
+        padding: 10px; /* Espaçamento interno para melhor visualização */
+        overflow: auto; /* Evita problemas de layout com floats */
+      }
+
+      .foto {
+        /* Apenas para visualização */
+        float: left; /* Coloca a div "foto" à esquerda */
+        width: 100px; /* Define a largura da div "foto" */
+        height: 100px; /* Define a altura da div "foto" */
+        margin-right: 10px; /* Espaçamento à direita para separar a "foto" da "informacao" */
+      }
+
+      .informacoes {
+        background-color: lightblue; /* Apenas para visualização */
+        overflow: hidden; /* Limpa a float da div "foto" */
+        margin: 25px 0px;
+        
+      }
+      .foto img {
+        max-width: 100%; /* Faz a imagem se ajustar à largura da div "foto" */
+        max-height: 100%;
+        height: auto; /* Mantém a proporção original da imagem */
+      }
+      div.informacoes{
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+      }
+      div.informacoes ul{
+        
+        list-style-type: none;
+        
+        
+      }
+      div.membro{
+        display: flex;
+      }
+      div.foto img{
+        border-radius: 25px;
+        display: flex;
+      }
+/*Fim equipe*/
 nav {
     height: 100%;
     width: 0px;
@@ -299,10 +353,4 @@ footer{
     background-color: #f7eedd;
     display: flex;
     justify-content: center;
-}
-
-
-#menuestuD{
-    display: flex;
-    text-decoration: none;
 }

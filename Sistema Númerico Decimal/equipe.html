@@ -1,138 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equipe</title>
-    <style>
-        .membro {
-            width: 100%; /* Utiliza toda a largura disponível */
-            box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento */
-            border-bottom: 1px solid black; /* Adiciona linha separadora abaixo de cada membro */
-            padding: 10px; /* Espaçamento interno para melhor visualização */
-            overflow: auto; /* Evita problemas de layout com floats */
-        }
+    <!--javascript-->
+    <script src="script.js"></script>
+    <!--fim javascript-->
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--fim font-->
+    <!--bootsrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--fim bootsrap-->
 
-        .foto {
-             /* Apenas para visualização */
-            float: left; /* Coloca a div "foto" à esquerda */
-            width: 100px; /* Define a largura da div "foto" */
-            height: 100px; /* Define a altura da div "foto" */
-            margin-right: 10px; /* Espaçamento à direita para separar a "foto" da "informacao" */
-        }
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--CSS-->
+  </head>
+  <header>
+    <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+    <a href="projeto.html"
+      ><img src="img/decimal-logo.png" alt="logo" class="logo" />
+      <h1 class="titulo">Sistema Numérico Decimal</h1></a
+    >
+    <a href="equipe.html" class="equipe">Equipe</a>
+  </header>
 
-        .informacoes {
-            background-color: lightblue; /* Apenas para visualização */
-            overflow: hidden; /* Limpa a float da div "foto" */
-        }
-        .foto img{
-            max-width: 100%; /* Faz a imagem se ajustar à largura da div "foto" */
-            max-height: 100%;
-            height: auto; /* Mantém a proporção original da imagem */
-        }
-    </style>
-</head>
-<body>
+  <nav id="menu">
+    <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+    <a href="projeto.html">Historia</a>
+    <a href="projeto.html">Funcionamento</a>
+    <a href="projeto.html">Operacoes Aritmeticas</a>
+    <a href="projeto.html">Funcões no cotidiano</a>
+    <a href="projeto.html">Funções na computação</a>
+  </nav>
+  <body>
     <section>
-        <div class="container">
-            <div class="membro">
-                <div class="foto">
-                    <img src="arthur_barros.jpeg" alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Arthur Barros Meirinho</p>
-                    <p>abm@cesar.school</p>
-                    <a href="github.com/arthurbarros1">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <p>2</p>
-                </div>
-                <div class="informacoes">
-                    <p>Informações 2</p>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <img src="caio_felipe.jpeg" alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Caio Felipe</p>
-                    <a href=" github.com/frockis">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <p>4</p>
-                </div>
-                <div class="informacoes">
-                    <p>Gabriel Angelo Maranhão Prata</p>
-                    <p>gamp@cesar.school</p>
-                    <a href="https://github.com/GabrielPrataa">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <p>5</p>
-                </div>
-                <div class="informacoes">
-                    <p>Gilvando Gonçalves Guerra</p>
-                    <p>ggg@cesar.school</p>
-                    <a href="https://github.com/gilguerra1">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <img src="leobardo_granja.jpeg" alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Leonardo Granja Cavalcanti Coutinho</p>
-                    <p>lgcc@cesar.school</p>
-                    <a href="https://github.com/leonardogranja05">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <img src="luis_filipe.jpeg" alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Luis Filipe Brigido Teles</p>
-                    <a href="https://github.com/LFilipeTeles">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <img src="matheus_miranda.jpeg", alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Matheus Miranda Escorel </p>
-                    <p>mme@cesar.school</p>
-                    <a href="https://github.com/MatheusMiraEsc">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <img src="thiago_cunha.jpeg" alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Thiago Pinto De Paiva Cunha </p>
-                    <p>tppc@cesar.school</p>
-                    <a href="https://github.com/Th015">github</a>
-                </div>
-            </div>
-            <div class="membro">
-                <div class="foto">
-                    <img src="tiago_galvao.jpeg" alt="foto">
-                </div>
-                <div class="informacoes">
-                    <p>Tiago Galvao Monteiro</p>
-                    <p>tgm@cesar.school</p>
-                    <a href="https://github.com/TiagoGmont">github</a>
-                </div>
-            </div>
-            
+      <div class="container">
+        <div class="membro">
+          <div class="foto">
+            <img src="img/arthur_barros.jpeg" alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Arthur Barros Meirinho</li>
+              <li>abm@cesar.school</li>
+              <li><a href="github.com/arthurbarros1">github</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="membro">
+          <div class="foto">
+            <p>2</p>
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Augusto Cesar Durando</li>
+              <li>acrdf@cesar.school</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/caio_felipe.jpeg" alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Caio Felipe</li>
+              <li>cfsr@cesar.school</li>
+              <li><a href=" github.com/frockis">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/Gabriel.jpeg" alt="" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Gabriel Angelo Maranhão Prata</li>
+              <li>gamp@cesar.school</li>
+              <li><a href="https://github.com/GabrielPrataa">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/Gilvando.jpeg" alt="" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Gilvando Gonçalves Guerra</li>
+              <li>ggg@cesar.school</li>
+              <li><a href="https://github.com/gilguerra1">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/leobardo_granja.jpeg" alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Leonardo Granja Cavalcanti Coutinho</li>
+              <li>lgcc@cesar.school</li>
+              <li><a href="https://github.com/leonardogranja05">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/luis_filipe.jpeg" alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Luis Filipe Brigido Teles</li>
+              <li><a href="https://github.com/LFilipeTeles">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/matheus_miranda.jpeg" , alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Matheus Miranda Escorel</li>
+              <li>mme@cesar.school</li>
+              <li><a href="https://github.com/MatheusMiraEsc">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/thiago_cunha.jpeg" alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li><p>Thiago Pinto De Paiva Cunha</p></li>
+              <li><p>tppc@cesar.school</p></li>
+              <li><a href="https://github.com/Th015">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="membro">
+          <div class="foto">
+            <img src="img/tiago_galvao.jpeg" alt="foto" />
+          </div>
+          <div class="informacoes">
+            <ul>
+              <li>Tiago Galvao Monteiro</li>
+              <li>tgm@cesar.school</li>
+              <li><a href="https://github.com/TiagoGmont">github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
