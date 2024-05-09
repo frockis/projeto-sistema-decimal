@@ -189,7 +189,7 @@ div.flex{
 }
 /*fim do div separador 5*/
 
-/*section curiosidades*/
+/*section final*/
 section.final-pag{
     display: flex;
 }
@@ -199,10 +199,8 @@ div.imagem-curiosidade img{
 .curiosidades{
     margin: 25px;
     display: block;
-
-
 }
-/*fim da section curiosidades*/
+/*fim da section final*/
 
 /*formulario*/
 .mb-3{
