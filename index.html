@@ -20,21 +20,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!--fim bootsrap-->
-    <style>
-      .titulo {
-        position: relative;
-        right: 500px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <link rel="stylesheet" href="style.css" />
   <body>
     <header>
-      <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+      <button class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</button>
       <img src="decimal-logo.png" alt="logo" class="logo" />
     </header>
-
     <nav id="menu">
       <a href="#" onclick="fecharMenu()">&times; Fechar</a>
       <a href="#separador1">Historia</a>
@@ -42,10 +34,12 @@
       <a href="#separador3">Operacoes Aritmeticas</a>
       <a href="#separador4">Funcões no cotidiano</a>
       <a href="#separador5">Funções na computação</a>
+      <a href="#conversor-sect">Conversor</a>
+      <a href="#quiz-sect">Faça o nosso quiz!</a>
       <a href="equipe.html">Equipe</a>
     </nav>
     <main id="conteudo">
-      <div class="flex" id="intro">
+      <div class="section" id="intro">
         <h1>Sistema numérico decimal</h1>
         <p>
           O sistema de numeração decimal é o sistema numérico mais comum e
@@ -55,7 +49,7 @@
           cultura global.
         </p>
       </div>
-      <div class="flex" id="separador1">
+      <div class="section" id="separador1">
         <img src="numeros historia.jpg" alt="imagem de osso riscado" />
         <h2>História</h2>
         <p>
@@ -66,7 +60,7 @@
           todo o mundo.
         </p>
       </div>
-      <div class="flex" id="separador2">
+      <div class="section" id="separador2">
         <img
           src="funcionamento.jpg"
           alt="imagem de posições das ordens e classes de números"
@@ -94,7 +88,7 @@
           e cinco inteiros e setenta e cinco centésimos".
         </p>
       </div>
-      <div class="flex" id="separador3">
+      <div class="section" id="separador3">
         <img src="operação numeros.jpg" alt="imagem das operações algébricas" />
         <h2>Operações Aritméticas</h2>
         <p>
@@ -110,7 +104,7 @@
           para certo números de dígitos, que seria 10 elevado a n -1.
         </p>
       </div>
-      <div class="flex" id="separador4">
+      <div class="section" id="separador4">
         <img src="numeros cotidiano.jpg" alt="numeros no cotidiano" />
         <h2>Funções no cotidiano</h2>
         <p>
@@ -119,7 +113,7 @@
           praticidade.
         </p>
       </div>
-      <div class="flex" id="separador5">
+      <div class="section" id="separador5">
         <img src="numeros computação.webp" alt="numeros na computação" />
         <h2>Funções na computação</h2>
         <p>
@@ -136,76 +130,62 @@
           desempenhar um papel vital em diversos aspectos da computação moderna
         </p>
       </div>
-      <section class="final-pag">
-        <div class="imagem-curiosidade">
+      <div class="curiosidades">
+        <div class="imagem-curiosidades">
           <img
-            src="Design_sem_nome__1_-removebg-preview.png"
-            alt="interrogações"
+          src="Design_sem_nome__1_-removebg-preview.png"
+          alt="interrogações"
           />
         </div>
-        <div class="curiosidades">
+        <div>
           <h2>Curiosidades</h2>
           <p>
-            Os números foram criados, ao longo da história, diante da
-            necessidade do homem, pois precisavam de uma forma de representar as
-            quantidades. As primeiras representações numéricas apareceram em
-            razão da necessidade de se fazer a contagem dos animais, por
-            exemplo. Os pastores soltavam seu rebanho pela manhã e contavam
-            esses animais através de pedrinhas que eram colocadas num saco. Para
-            cada animal, usava-se uma pedrinha. Ao final do dia, ao buscar o
-            rebanho, os pastores contavam de forma inversa, retirando do saco
-            uma pedrinha para cada animal. Os egípcios foram um dos primeiros
-            povos a criar um sistema de numeração, depois vieram os romanos com
-            um sistema conhecido como números romanos. Podemos encontrá-los até
-            hoje, sendo usados na escrita dos séculos, em relógios, capítulos de
-            livros, nomes dos papas, etc. E então, os números que usamos foram
-            criados pelos indianos, no Norte da Índia, em meados do século V da
-            era cristã. Mas foram os árabes que difundiram essa forma de
-            contagem e por isso ficaram conhecidos como indo-arábicos.
+          Os números foram criados, ao longo da história, diante da necessidade
+          do homem, pois precisavam de uma forma de representar as quantidades.
+          As primeiras representações numéricas apareceram em razão da
+          necessidade de se fazer a contagem dos animais, por exemplo. Os
+          pastores soltavam seu rebanho pela manhã e contavam esses animais
+          através de pedrinhas que eram colocadas num saco. Para cada animal,
+          usava-se uma pedrinha. Ao final do dia, ao buscar o rebanho, os
+          pastores contavam de forma inversa, retirando do saco uma pedrinha
+          para cada animal. Os egípcios foram um dos primeiros povos a criar um
+          sistema de numeração, depois vieram os romanos com um sistema
+          conhecido como números romanos. Podemos encontrá-los até hoje, sendo
+          usados na escrita dos séculos, em relógios, capítulos de livros, nomes
+          dos papas, etc. E então, os números que usamos foram criados pelos
+          indianos, no Norte da Índia, em meados do século V da era cristã. Mas
+          foram os árabes que difundiram essa forma de contagem e por isso
+          ficaram conhecidos como indo-arábicos.
           </p>
         </div>
-      </section>
-      <section class="conversor-sect">
-        <div class="conversor">
-          <h2>Conversor Decimal</h2>
-          <div class="inputContainer">
-            <label for="bin-label">Binário:</label>
-            <input type="number" id="bin-input" />
-          </div>
-          <div class="inputContainer">
-            <label for="hexa-label">Hexadecimal:</label>
-            <input type="number" id="hexa-input" />
-          </div>
-          <div class="outputContainer">
-            <label for="dec-label">Decimal:</label>
-            <input type="number" id="dec-input" />
+      </div>
+      </div>
+        <div class="conversor-sect" id="conversor-sect">
+          <h2>Conversor</h2>
+          <div class="conversor">
+              <div class="inputContainer">
+                <label for="decimal">Decimal</label>
+                <input type="text" id="decimal" oninput="convert(this.id)" />
+              </div>
+              <div class="inputContainer">
+                <label for="hexadecimal">Hexadecimal</label>
+                <input type="text" id="hexadecimal" oninput="convert(this.id)" />
+              </div>
+              <div class="inputContainer">
+                <label for="binary">Binário</label>
+                <input type="text" id="binary" oninput="convert(this.id)" />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="quiz-sect" id="quiz-sect">
+        <h2>Faça o nosso quiz!</h2>
+        <button>Iniciar Quiz</button>
+      </div>
     </main>
     <footer>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email </label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label2">
-          Comentário
-        </label>
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="4"
-        ></textarea>
-      </div>
-      <div class="contato">
-        <button><a href="equipe.html">Contato</a></button>
-      </div>
+      <p>&copy; 2024 Sistema numérico decimal.</p>
     </footer>
   </body>
 </html>
