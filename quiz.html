@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</button>
+      <img src="decimal-logo.png" alt="logo" class="logo" />
+    </header>
+    <nav id="menu">
+      <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+      <a href="index.html#separador1">Historia</a>
+      <a href="index.html#separador2">Funcionamento</a>
+      <a href="index.html#separador3">Operacoes Aritmeticas</a>
+      <a href="index.html#separador4">Funcões no cotidiano</a>
+      <a href="index.html#separador5">Funções na computação</a>
+      <a href="index.html#conversor-sect">Conversor</a>
+      <a href="index.html#quiz-sect">Faça o nosso quiz!</a>
+      <a href="equipe.html">Equipe</a>
+    </nav>
+    <section class="quiz">
+      <div class="app">
+        <h1>Quiz</h1>
+        <div class="quiz">
+          <h2 id="question">Question goes here</h2>
+          <div id="answer-button">
+            <button class="btn">Resposta 1</button>
+            <button class="btn">Resposta 2</button>
+            <button class="btn">Resposta 3</button>
+            <button class="btn">Resposta 4</button>
+            <button class="btn">Resposta 5</button>
+          </div>
+          <button id="nextbtn">Próximo</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Sistema numérico decimal.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
