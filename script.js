@@ -3,13 +3,16 @@ function abrirMenu(event){
     event.preventDefault();
     document.getElementById("menu").style.width = "250px";
     document.getElementById("menu").style.display = "flex";
+    document.getElementById("menu").style.transition = "width 10s ease";
     document.getElementById("conteudo").style.marginLeft = "";
+
 }
 
 function fecharMenu(event){
     event.preventDefault();
     document.getElementById("menu").style.width = "0px";
     document.getElementById("menu").style.display = "none";
+    document.getElementById("menu").style.transition = "width 10s ease";
     document.getElementById("conteudo").style.marginLeft = "";
 }
 /* Conversor */

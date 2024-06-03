@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equipe</title>
     <!-- JavaScript -->
-    <script src="script.js"></script>
     <!-- End JavaScript -->
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,11 +25,10 @@
     <!-- End CSS -->
   </head>
   <body>
-    <!-- Moved header inside body -->
     <header>
       <a href="#" class="btn-abrir" onclick="abrirMenu(event)">&#9776; Menu</a>
       <a href="index.html">
-        <img src="decimal-logo.png" alt="logo" class="logo" />
+        <img src="img/decimal-logo.png" alt="logo" class="logo" />
       </a>
     </header>
     <nav id="menu">
@@ -208,5 +206,22 @@
     <footer>
       <p>&copy; 2024 Sistema numérico decimal.</p>
     </footer>
+    <script>
+      function abrirMenu(event) {
+        event.preventDefault();
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("menu").style.display = "flex";
+        document.getElementById("menu").style.transition = "width 10s ease";
+        document.getElementById("conteudo").style.marginLeft = "";
+      }
+
+      function fecharMenu(event) {
+        event.preventDefault();
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("menu").style.transition = "width 10s ease";
+        document.getElementById("conteudo").style.marginLeft = "";
+      }
+    </script>
   </body>
 </html>
