@@ -12,7 +12,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #008eda92;
+    background-color: #0f2f3536;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
     position: relative;
     width: 100%;
@@ -26,7 +26,7 @@ header {
     font-size: 24px;
     color: #ffffff;
     text-decoration: none;
-    background-color: #41c9e236;
+    background-color: #dbc1c136;
     padding: 10px 20px;
     cursor: pointer;
     position: absolute;
@@ -123,21 +123,46 @@ main {
 #separador1 img {
     max-width: 150px;
     display: inline-block;
-    margin: 10px 20px 20px 0;
+    margin: 5px 20px 20px 0;
     vertical-align: middle;
 }
 
-#separador3 img,
-#separador4 img,
-#separador5 img {
+#separador3 img{
     max-width: 200px;
     display: inline-block;
-    margin: 10px 20px;
+    margin: 15px 35px 0px 20px;
     vertical-align: middle;
 }
 #separador4 img{
-    margin: 0px 20px 0px 0px;
+    max-width: 200px;
+    display: inline-block;
+    margin: 10px 120px 10px 20px;
+    vertical-align: middle;
 }
+#separador5 img {
+    max-width: 200px;
+    display: inline-block;
+    margin: 32px 35px 0px 20px;
+    vertical-align: middle;
+}
+#separador4 img{
+    margin: -4px 20px 0px 0px;
+}
+
+.txt .ft{
+    width:100%;
+}
+
+.ft{
+    float: left;
+    overflow: hidden;
+}
+
+.txt{
+    overflow:hidden ;
+}
+
+
 
 .curiosidades {
     padding: 20px;
@@ -202,6 +227,10 @@ main {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+
+    
+
 
 /* Quiz */
 .quiz-sect {
