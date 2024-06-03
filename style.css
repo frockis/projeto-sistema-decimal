@@ -107,8 +107,10 @@ main {
     float: none;
 }
 #separador2 h2{
-    text-align: center;
+    text-align: right;
 }
+
+
 .section img,
 #separador1 img,
 #separador3 img,
@@ -127,16 +129,37 @@ main {
     vertical-align: middle;
 }
 
-#separador3 img,
-#separador4 img,
-#separador5 img {
-    max-width: 200px;
-    display: inline-block;
-    margin: 10px 20px;
-    vertical-align: middle;
+
+#separador3 img{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 170px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+
 }
 #separador4 img{
-    margin: 0px 20px 0px 0px;
+    max-width: 190px;
+    display: block;
+    vertical-align: middle;
+}
+
+#separador5 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 180px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#separador4 img{
+    margin-top: -8px;
+    margin-right: 15px;
+    margin-left: 3px;
 }
 
 .curiosidades {
@@ -151,7 +174,7 @@ main {
 
 .curiosidades p {
     font-size: 18px;
-    text-align: left;
+    text-align:start;
 }
 
 .curiosidades h2 {
@@ -164,8 +187,8 @@ main {
     max-width: 100%;
     height: 150px;
     display: block;
-    margin: 0 auto 20px;
-    border-radius: 10px;
+    margin: 50px 10px;
+    border-radius: 20px;
     float: left;
 }
 
@@ -366,4 +389,15 @@ footer {
 
 .membro .informacoes ul li a i {
     margin-right: 5px;
+}
+
+
+/*Alteracoes feitas 02/06/2024*/
+
+#paragrafo-OA{
+    text-align: justify;
+}
+
+#funcoes-cotidiano-h2{
+    margin-top: 5px;
 }
