@@ -1,12 +1,12 @@
 /* Barra de navegação */ 
-function abrirMenu(){
+function abrirMenu(event){
     event.preventDefault();
     document.getElementById("menu").style.width = "250px";
     document.getElementById("menu").style.display = "flex";
     document.getElementById("conteudo").style.marginLeft = "";
 }
 
-function fecharMenu(){
+function fecharMenu(event){
     event.preventDefault();
     document.getElementById("menu").style.width = "0px";
     document.getElementById("menu").style.display = "none";
