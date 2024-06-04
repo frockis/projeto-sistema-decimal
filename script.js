@@ -15,42 +15,6 @@ function fecharMenu(event){
     document.getElementById("menu").style.transition = "width 10s ease";
     document.getElementById("conteudo").style.marginLeft = "";
 }
-/* Conversor */
-function convert(id) {
-    let decimalInput = document.getElementById("decimal");
-    let hexadecimalInput = document.getElementById("hexadecimal");
-    let binaryInput = document.getElementById("binary");
-  
-    if (id === "decimal") {
-      let decimal = parseInt(decimalInput.value);
-      if (!isNaN(decimal)){
-        hexadecimalInput.value = decimal.toString(16);
-        binaryInput.value = decimal.toString(2);
-        }else{
-            hexadecimalInput.value = "";
-            binaryInput.value = "";
-        }
-      } else if (id === "hexadecimal") {
-        let decimal = parseInt(hexadecimalInput.value, 16);
-        if (!isNaN(decimal)){
-        decimalInput.value = decimal;
-        binaryInput.value = decimal.toString(2);
-    } else{
-        decimalInput.value = "";
-        binaryInput.value = "";
-    }
-      } else if (id === "binary") {
-        let decimal = parseInt(binaryInput.value, 2);
-        if (!isNaN(decimal)){
-        decimalInput.value = decimal;
-        hexadecimalInput.value = decimal.toString(16);
-        } else{
-            decimalInput.value = "";
-            hexadecimalInput.value = "";
-        }
-        }
-    }
-
 /* Quiz */
 const questions = [
     {
@@ -192,5 +156,4 @@ nextbutton.addEventListener("click", ()=> {
 })
 
 startquiz();
-
 
